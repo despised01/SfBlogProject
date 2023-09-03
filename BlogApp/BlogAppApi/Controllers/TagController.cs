@@ -4,6 +4,8 @@ using BlogApp.BlogAppLib.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System;
+using BlogApp.BlogAppLib.Repository.Interfaces;
+using BlogApp.BlogAppBll.RequestModels;
 
 namespace BlogApp.BlogAppApi.Controllers
 {

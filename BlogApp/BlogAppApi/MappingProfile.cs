@@ -1,6 +1,7 @@
 ﻿using AutoMapper.Internal;
 using AutoMapper;
 using BlogApp.BlogAppLib.Models;
+using BlogApp.BlogAppBll.RequestModels;
 
 namespace BlogApp.BlogAppApi
 {

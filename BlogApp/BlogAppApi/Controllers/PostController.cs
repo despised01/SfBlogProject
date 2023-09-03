@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 using System;
 using BlogApp.BlogAppLib.Models;
 using AutoMapper;
+using BlogApp.BlogAppLib.Repository.Interfaces;
+using BlogApp.BlogAppBll.RequestModels;
 
 namespace BlogApp.BlogAppApi.Controllers
 {

@@ -9,6 +9,9 @@ using System.Security.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System;
+using Microsoft.AspNetCore.Authentication;
+using BlogApp.BlogAppLib.Repository.Interfaces;
+using BlogApp.BlogAppBll.RequestModels;
 
 namespace BlogApp.BlogAppApi.Controllers
 {
@@ -119,7 +122,7 @@ namespace BlogApp.BlogAppApi.Controllers
             //    (!string.IsNullOrEmpty(request.Password)
             //    && !string.IsNullOrEmpty(request.Email)))
             //    throw new ArgumentNullException("Введенные данные некорректны");
-
+ 
             var user = users.GetByLogin(login).Result;
             if (user.Login != login)
                 throw new AuthenticationException("Неверный логин");
